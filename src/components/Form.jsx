@@ -9,7 +9,7 @@ function Form() {
   return (
     <section className="container">
       <h4>Shade generator</h4>
-      <form>
+      <form className="color-form">
         <input
           type="text"
           value={color}

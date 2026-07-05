@@ -1,9 +1,5 @@
 function ColorList() {
-  return (
-    <section>
-      <h4>Shade generator</h4>
-    </section>
-  );
+  return <section>Color list</section>;
 }
 
 export default ColorList;
