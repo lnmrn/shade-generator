@@ -69,10 +69,6 @@ html {
   height: 160px;
 }
 
-.color-form {
-  display: flex;
-}
-
 .btn {
   cursor: pointer;
   color: var(--white);
@@ -100,4 +96,52 @@ html {
 }
 .btn-block {
   width: 100%;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+
+.color-form {
+  display: flex;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: var(--grey-400);
+}
+
+input[type="text"] {
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  max-width: 200px;
+}
+input[type="color"] {
+  height: 100%;
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .color-form {
+    height: 40px;
+  }
 }
