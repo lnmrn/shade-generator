@@ -8,8 +8,8 @@ function Form() {
   }
   return (
     <section className="container">
-      <h4>Shade generator</h4>
-      <form className="color-form">
+      <h4>Tints & Shades</h4>
+      <form className="color-form" onSubmit={handleSumbit}>
         <input
           type="color"
           value={color}
