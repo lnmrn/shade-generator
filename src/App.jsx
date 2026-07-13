@@ -2,7 +2,7 @@ import { useState } from "react";
 import ColorList from "./components/ColorList";
 import Form from "./components/Form";
 import Values from "values.js";
-import { toast, ToastContainer } from "react-toastify";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 function App() {
   const [colors, setColors] = useState(new Values("#37d7d5").all(10));
@@ -22,9 +22,11 @@ function App() {
       <ToastContainer
         position="top-center"
         autoClose={3000}
-        closeOnClick={true}
         theme="colored"
-        transition="bounce"
+        closeOnClick={true}
+        transition={Bounce}
+        pauseOnHover={false}
+        pauseOnFocusLoss={false}
       />
       <Form generateColor={generateColor} />
       <ColorList colors={colors} />

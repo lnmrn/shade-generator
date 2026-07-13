@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoIosColorPalette } from "react-icons/io";
 
 function Form({ generateColor }) {
   const [color, setColor] = useState("");
@@ -9,7 +10,15 @@ function Form({ generateColor }) {
   }
   return (
     <section className="container">
-      <h1>HexMe</h1>
+      <h1
+        className="title"
+        style={{
+          borderBottom: `2px solid ${color}`,
+          borderRadius: "8px",
+        }}
+      >
+        <IoIosColorPalette style={{ color: color }} /> <span>HexMe</span>
+      </h1>
       <form className="color-form" onSubmit={handleSumbit}>
         <input
           type="color"

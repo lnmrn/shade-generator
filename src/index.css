@@ -138,6 +138,13 @@ html {
   height: 7rem;
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+}
+
 ::placeholder {
   font-family: inherit;
   color: var(--grey-400);
