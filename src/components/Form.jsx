@@ -1,10 +1,11 @@
 import { useState } from "react";
 
-function Form() {
+function Form({ generateColor }) {
   const [color, setColor] = useState("");
 
   function handleSumbit(e) {
     e.preventDefault();
+    generateColor(color);
   }
   return (
     <section className="container">
