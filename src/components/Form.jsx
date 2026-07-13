@@ -8,7 +8,7 @@ function Form() {
   }
   return (
     <section className="container">
-      <h4>Tints & Shades</h4>
+      <h1>HexMe</h1>
       <form className="color-form" onSubmit={handleSumbit}>
         <input
           type="color"
@@ -19,7 +19,7 @@ function Form() {
           type="text"
           value={color}
           onChange={(e) => setColor(e.target.value)}
-          placeholder="#f15025"
+          placeholder="#37d7d5"
         />
         <button className="btn" type="submit" style={{ background: color }}>
           Generate

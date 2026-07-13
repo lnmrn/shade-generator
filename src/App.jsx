@@ -4,12 +4,12 @@ import Form from "./components/Form";
 import Values from "values.js";
 
 function App() {
-  const [colors, setColors] = useState([new Values("#37d7d5").all(10)]);
+  const [colors, setColors] = useState(new Values("#37d7d5").all(10));
 
   return (
     <main>
       <Form />
-      <ColorList />
+      <ColorList colors={colors} />
     </main>
   );
 }
